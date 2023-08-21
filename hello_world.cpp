@@ -6,18 +6,17 @@ int multiply (int first, int second) {
 }
 
 int main () {
-  // std::string first_number;
-  // std::cout << "Please type in your first name : " << std::endl;
-  // std::cin >> first_number;
-  // std::cout << "Hello" << first_number << std::endl;
-  // std::cout << multiply(15, 10) << std::endl;
-  int age;
-  std::string name;
 
-  std::cout << "Please enter your age and name : " << std::endl;
+  std::string full_name;
+  int age;
+
+  std::cout << "Please enter your full name and age " << std::endl;
+
+  std::getline(std::cin, full_name);
+
   std::cin >> age;
-  std::cin >> name;
-  std::cout << "Hello " << name << ", you are " << age << " years old!" << std::endl;
-  std::cout << "Hope you liked it" << std::endl;
+
+  std::cout << "Hello " << full_name << ", you are " << age << " years old!" << std::endl;
+
   return 0;
 }
