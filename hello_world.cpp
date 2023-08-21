@@ -18,5 +18,6 @@ int main () {
   std::cin >> age;
   std::cin >> name;
   std::cout << "Hello " << name << ", you are " << age << " years old!" << std::endl;
+  std::cout << "Hope you liked it" << std::endl;
   return 0;
 }
