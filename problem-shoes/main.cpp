@@ -10,15 +10,13 @@ int main(int argc, char** argv) {
     int N, M;
     cin >> N >> M;
     int shoes = findShoes(N, M);
-    cout << "We need to buy " << shoes << " shoes" << endl;
+    cout << shoes << endl;
   }
 
   return 0;
 }
 
 int findShoes(int friends, int left_shoes) {
-  cout << "Friends: " << friends << endl;
-  cout << "Left Shoes: " << left_shoes << endl;
   if (friends < left_shoes) {
     return friends;
   }
